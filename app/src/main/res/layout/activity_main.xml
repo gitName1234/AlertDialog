@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fon"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <Button
+        android:id="@+id/alert_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alert вопрос"
+        android:onClick="showDialog"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <Button
+        android:id="@+id/alert_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alert с RadioButton"
+        android:onClick="showDialogRadioButton"
+        app:layout_constraintTop_toBottomOf="@id/alert_one"/>
+    <Button
+        android:id="@+id/alert_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alert с текстовыми полями"
+        android:onClick="showAlertTextFields"
+        app:layout_constraintTop_toBottomOf="@id/alert_two"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
